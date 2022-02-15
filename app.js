@@ -5,7 +5,7 @@ console.log("body");
 //let main = document.createElement()
 
 // create the rows - add 16x for loop
-for (let i =0; i < 16; i++) {
+for (let i =0; i < 30; i++) {
     // console.log("i is " + i);
     var row = document.createElement("div");
     console.log(row);
@@ -13,7 +13,7 @@ for (let i =0; i < 16; i++) {
     row.id = "row" + i;
     
     // create the squares - add 16x for loop
-    for (let j = 0; j < 16; j++){
+    for (let j = 0; j < 30; j++){
         // console.log("j is " + j);
         var square = document.createElement("div");
         square.className = "square";
@@ -24,5 +24,13 @@ for (let i =0; i < 16; i++) {
     body.append(row);
 }
 
+let squares = document.querySelectorAll(".square");
+squares.forEach((square) => {
+    square.addEventListener("mouseover", func, false);
+})
 
+
+function func() {
+    this.setAttribute("style", "background-color:darkslategray;")
+}
 // append divs to DOM
