@@ -1,6 +1,6 @@
 // get element from page
-let body = document.getElementById("main");
-console.log("body");
+let body = document.getElementById("sketch");
+console.log("sketch");
 
 // create the rows - add 16x for loop
 for (let i =0; i < 30; i++) {
@@ -17,6 +17,7 @@ for (let i =0; i < 30; i++) {
         row.append(square);
     }
 
+    // append divs to DOM
     body.append(row);
 }
 
@@ -27,6 +28,5 @@ squares.forEach((square) => {
 
 
 function func() {
-    this.setAttribute("style", "background-color:darkslategray;")
+    this.setAttribute("style", "background-color: #7689de")
 }
-// append divs to DOM
