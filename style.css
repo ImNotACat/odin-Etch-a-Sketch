@@ -2,7 +2,6 @@ body {
     background-color: whitesmoke;
     padding: 0;
     margin: 0;
-    height: 100vh;
     width: 100%;
     margin: auto;
 }
@@ -13,8 +12,12 @@ body {
 
 } 
 
-.main .side {
+.side {
     flex: 1 1 0%;
+}
+
+.middle {
+    width: 80vw;
 }
 
 .header {
@@ -37,7 +40,7 @@ body {
     font-weight: 800; 
 }
 
-.main .sketch{
+.sketch{
     border-color: 1px #7689de;
     flex: 1 0 auto;
 }
@@ -48,16 +51,20 @@ body {
 
 .square { 
     background-color: #a9dce3;
-    height: 25px;
-    width: 25px;
-    margin: 1px;
-    border: 0px #7689de;
-    flex: 1 1 0%;
+    margin: 0.5px;
+    flex: 1;
+    border-radius: 5%;
+}
+
+.squarehover {
+    background-color: #7689de;
+    margin: 0.5px;
+    flex: 1;
     border-radius: 5%;
 }
 
 .square:before {
     content:'';
     float:left;
-    padding-top:100%;
+    padding-top:90%;
 }
