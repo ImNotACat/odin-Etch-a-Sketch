@@ -2,10 +2,12 @@ const STANDARD_SIZE = 20;
 
 // get element from page
 let body = document.getElementById("sketch");
-console.log("sketch");
 
 function createGrid() {
-    let size = window.prompt("What is the size of your grid? 1-100")
+    let size = window.prompt("What is the size of your grid? 1-100");
+    if (isNaN(size) || size < 1 || size > 100) {
+        size = 100;
+    }
     
 // create the rows - add 16x for loop
     for (let i =0; i < size; i++) {
@@ -29,7 +31,7 @@ function createGrid() {
 }
 
 function func() {
-    this.setAttribute("style", "background-color: #7689de")
+    this.setAttribute("style", "background-color: #7689de");
 }
 
 window.onload = createGrid();
