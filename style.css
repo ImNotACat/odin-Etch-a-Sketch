@@ -4,11 +4,15 @@ body {
     margin: 0;
     width: 100%;
     margin: auto;
+    height: max-content;
 }
 
 .main {
     background-color: whitesmoke;
     display: flex; 
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
 
 } 
 
@@ -18,6 +22,8 @@ body {
 
 .middle {
     width: 80vw;
+    flex: 0 0 auto;
+    height: 100%;
 }
 
 .header {
@@ -42,7 +48,6 @@ body {
 
 .sketch{
     border-color: 1px #7689de;
-    flex: 1 0 auto;
 }
 
 .row {
